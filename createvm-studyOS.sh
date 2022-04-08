@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 export VMName="studyOS"
+url="http://cdimage.trisquel.info/trisquel-images/trisquel-netinst_10.0_amd64.iso"
 export ISOFilePath="~/Downloads/trisquel-netinst_10.0_amd64.iso"
 export VM_NET="default"
 export VM_OS="ubuntu20.04"
@@ -30,7 +31,6 @@ if which virtualbox; then
   CPUCount=1
   OSTypeID="Ubuntu_64"
   NetworkInterface="wlx503eaa732ee3"
-  url="http://cdimage.trisquel.info/trisquel-images/trisquel-netinst_10.0_amd64.iso"
   ISOFilePath="~/Downloads/trisquel-netinst_10.0_amd64.iso"
 
   #VBoxManage list vms
