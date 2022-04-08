@@ -42,4 +42,5 @@ VBoxManage modifyvm $VMName --boot1 dvd --boot2 disk --boot3 none --boot4 none
 echo "Setting network..."
 VBoxManage modifyvm $VMName --nic1 bridged --bridgeadapter1 $NetworkInterface
  
+VBoxManage modifyvm $VMName --nested-hw-virt on
 echo "VM Creation completed."
