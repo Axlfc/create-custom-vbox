@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 VMName="studyOS"
-VMDiskRoot="/mnt/user_name/VMs"
+VMDiskRoot="/mnt/$(whoami)/VMs"
 DiskDir="$VMDiskRoot/$VMName"
 DiskSize=$((1024*50))
 MemorySize=$((1024*4))
