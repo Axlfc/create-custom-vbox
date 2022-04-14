@@ -20,8 +20,9 @@ main()
 {
   if [ -f *cinnamon-64bit.iso ]; then
     rm linuxmint-*cinnamon-64bit.iso
-    download_system_image
   fi
+  download_system_image
+  
   sha256url="$(curl --silent https://linuxmint.com/edition.php?id=292 | grep sha256sum.txt | grep /sha256sum.txt | head -1 | cut -d '"' -f2)"
   wget "${sha256url}"
   
